@@ -1,0 +1,405 @@
+@import url('https://fonts.googleapis.com/css2?family=Nunito:ital,wght@0,200..1000;1,200..1000&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;1,300;1,400;1,500;1,700&display=swap')
+
+*{
+
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Nunito", sans-serif;
+    text-decoration: none;
+    border: none;
+    outline: none;
+    scroll-behavior: smooth;
+
+}
+
+:root {
+    --bg-color: #191f36;
+    --snd-bg-color: #262B40;
+    --text-color: #fff;
+    --main-color: #59B2F4;
+
+}
+
+html {
+    font-size: 62.5%;
+    overflow-x: hidden;
+}
+
+body {
+    background: var(--bg-color);
+    color: var(--text-color);
+}
+
+section {
+    min-height: 100vh;
+    padding: 10rem 9% 2rem;
+
+}
+
+a {
+    text-decoration: none;
+}
+
+.header {
+    position: sticky;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 90px;
+    padding-top: 18px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    z-index: 100;
+    background: var(--bg-color);
+}
+
+.logo {
+    font-size: 4rem;
+    color: var(--text-color);
+    margin-left: 5%;
+}
+
+.nav {
+    margin-right: 5%;
+}
+
+.nav a {
+    font-size: 17px;
+    color: var(--text-color);
+    margin-left: 4rem;
+    font-weight: 700;
+
+}
+
+.nav a:hover, .nav a.active {
+    color: var(--main-color);
+}
+
+#menu-icon {
+    font-size: 3.6rem;
+    color: var(--text-color);
+    display: none;
+}
+
+.home {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.home-content h1 {
+    font-size: 4rem;
+    font-weight: 700;
+}
+
+.home-content h2 {
+    font-size: 3.2rem;
+    font-weight: 700;
+}
+
+.home-content h2:nth-of-type(2) {
+    margin-bottom: 20px;
+}
+
+.home-content p {
+    font-size: 1.6rem;
+}
+
+span {
+    color: var(--main-color);
+}
+
+.myimage img {
+    width: 25vw;
+    animation: floatImage 4s ease-in-out infinite;
+    
+}
+
+@keyframes floatImage {
+    0% {
+        transform: translateY(0);
+    }
+    50% {
+        transform: translateY(-2.4rem);
+    }
+    100% {
+        transform: translateY(0);
+    }
+}
+
+.social a {
+    display: inline-flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 2rem;
+    color: var(--main-color);
+    width: 4rem;
+    height: 4rem;
+    background: transparent;
+    border: .2rem solid var(--main-color);
+    border-radius: 50%;
+    margin: 3rem 1.5rem 3rem 0;
+    transition: 0.5sec ease;
+}
+
+.social a:hover {
+    background-color: var(--main-color);
+    color: var(--snd-bg-color);
+    box-shadow: 0 0 1rem  var(--main-color);
+    
+}
+
+.about {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: var(--snd-bg-color);
+    
+}
+
+.heading {
+    text-align: center;
+    font-size: 4.5rem;
+}
+
+.btn {
+    display: inline-block;
+    padding: 1rem 2.8rem;
+    background: var(--main-color);
+    border-radius: 4rem;
+    box-shadow: 0 0 1rem var(--main-color);
+    font-size: 1.4rem;
+    color: var(--bg-color);
+    letter-spacing: 0.1rem;
+    font-weight: 600;
+    transition: .5s ease;
+}
+
+.btn:hover {
+    box-shadow: none;
+    
+}
+
+.about h2 {
+    transition: .5s ease;
+}
+
+.about h3 {
+    font-size: 3rem;
+}
+
+.about p {
+    font-size: 1.6rem;
+}
+
+.about a {
+    margin-top: 20px;
+}
+
+.service-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 2rem;
+}
+
+.service-container .service-box {
+    flex: 1 1 30rem;
+    background: var(--snd-bg-color);
+    padding: 3rem 2rem 4rem;
+    border-radius: 2rem;
+    text-align: center;
+    border: .2rem solid var(--bg-color);
+    transition: .5s ease;
+}
+
+.service-container .service-box:hover{
+    border-color: var(--main-color);
+    transform: scale(1.02);
+}
+
+.service-box h2{
+    font-size: 2.5rem;
+
+}
+
+.service-box i {
+    font-size: 6rem;
+    color: var(--main-color);
+}
+
+.service-box p {
+    font-size: 1.6rem;
+
+}
+
+.service-box a {
+    margin-top: 1.5rem;
+}
+
+.contact {
+    background: var(--snd-bg-color);
+}
+
+.contact h2 {
+    margin-bottom: 3rem;
+}
+
+.contact form {
+    max-width: 70rem;
+    margin: 1rem auto;
+    text-align: center;
+    margin-bottom: 3rem;
+}
+
+.contact form .input-box {
+    display: flex;
+    flex-direction: column;
+}
+
+.contact form .input-box input, .contact form textarea {
+    width: 100%;
+    padding: 1.5rem;
+    font-size: 1.6rem;
+    color: var(--text-color);
+    /* color: var(--text-color); */
+    background: var(--bg-color);
+    border-radius: .8rem;
+    margin: .7rem 0;
+}
+
+.contact form textarea {
+    resize: none;
+}
+
+.contact form .btn {
+    margin-top: 2rem;
+    cursor: pointer;
+}
+
+.footer {
+    display: flex;
+    justify-content: center;
+}
+
+.footer-text {
+    font-size: 1.6rem;
+    margin-top: 1rem;
+}
+
+/* Breakpoints */
+
+@media (max-width: 1200px) {
+    html {
+        font-size: 55%;
+    }
+}
+
+@media (max-width: 991px) {
+    .header {
+        padding: 2rem 3%;
+    }
+    section {
+        padding: 10rem 3%;
+    }
+
+    .services {
+        padding: 7rem;
+
+    }
+
+    .portfolio {
+        padding-bottom: 7rem;
+    }
+
+    .contact {
+        min-height: auto;
+    }
+
+    .footer {
+        padding: 2rem 3%;
+    }
+}
+
+@media (max-width: 768px) {
+    #menu-icon {
+        display: block;
+    }
+
+    .nav{
+        position: absolute;
+        top: 100%;
+        left: 0;
+        width: 100%;
+        padding: 1rem 3%;
+        background: var(--bg-color);
+        border-top: 0.1rem solid rgba(0, 0, 0, .2);
+        box-shadow: 0 .5rem 1rem rgba(0, 0, 0, .2);
+        display: none;
+    }
+
+    .nav.active {
+        display: block
+    }
+    
+    .nav a {
+        display: block;
+        font-size: 2rem;
+        margin: 3rem 0;
+    }
+    .home { 
+        flex-direction: column;
+    }
+
+    .home-content {
+        order: 2;
+    }
+
+    .home-content h1 {
+        font-size: 5rem;
+    }
+
+    .home-content h3 {
+        font-size: 2.6rem;
+    }
+
+    .myimage img {
+        width: 90dvh;
+        margin-top: 4rem;
+    }
+
+    .about {
+        flex-direction: column;
+    }
+
+    .services h2 {
+        margin-bottom: 3rem;
+    }
+
+    .portfolio h2 {
+        margin-bottom: 3rem;
+    }
+
+
+
+
+}
+
+@media (max-width: 617px) {
+    .myimage img {
+        width: 80vh;
+        margin-top: 8rem;
+    }
+}
+
+@media (max-width: 450px) {
+    html {
+        font-size: 50%;
+    }
+
+    .contact form .input-box input {
+        width: 100%;
+    }
+}
