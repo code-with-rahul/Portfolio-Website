@@ -389,8 +389,16 @@ span {
 
 @media (max-width: 617px) {
     .myimage img {
-        width: 70vh;
+        width: 60vh;
         margin-top: 8rem;
+    }
+
+    .service-container {
+        flex-direction: column;
+    }   
+
+    .contact form .input-box input {
+        width: 90%;
     }
 }
 
@@ -399,7 +407,24 @@ span {
         font-size: 50%;
     }
 
+    .about {
+        width:100%;
+    }
+
+    .myimage img {
+        width: 40vh;
+        margin-top: 8rem;
+    }
+
+    .service-container {
+        flex-direction: column;
+    }   
+
     .contact form .input-box input {
-        width: 100%;
+        width: 90%;
+    }
+
+    #text-area {
+        width: 91%;
     }
 }
