@@ -389,7 +389,7 @@ span {
 
 @media (max-width: 617px) {
     .myimage img {
-        width: 80vh;
+        width: 60vh;
         margin-top: 8rem;
     }
 }
